@@ -37,15 +37,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/krishnaji020210/munnabot1.git",
+    "https://github.com/VISCITY/xbit.git",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+vgnpa0YWIlU1YjVl")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+IrU-GVsBpIY0ZjVl")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/botscomplex")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+3ecHEkdSLc82ODZi")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -89,23 +89,22 @@ autoclean = []
 confirmer = {}
 file_cache: dict[str, float] = {}
 
-START_IMG_URL = ["https://files.catbox.moe/nidlkg.jpg",
-                 "https://files.catbox.moe/05d0c9.jpg",
-                 "https://files.catbox.moe/81cvxx.jpg"]
+START_IMG_URL = ["https://files.catbox.moe/lt9dt0.jpg",
+                 "https://files.catbox.moe/4ui3jm.jpg"]
     
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/87f680aead03443f291b0.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/iorcd7.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/edd388a42dd2c499fd868.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
-STREAM_IMG_URL = "https://graph.org/file/ff2af8d4d10afa1baf49e.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/e8730fdece86a1166f608.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/4ui3jm.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/4ui3jm.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/4ui3jm.jpg"
 
 
 
@@ -127,4 +126,4 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
