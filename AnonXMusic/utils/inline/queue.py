@@ -94,8 +94,10 @@ def aq_markup(_, chat_id):
                 text="▢",
                 callback_data=f"ADMIN Stop|{chat_id}",
                 style=ButtonStyle.DANGER
-            ),
+),
         ],
+    [ InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true")],
+        
     ]
 
     return buttons
